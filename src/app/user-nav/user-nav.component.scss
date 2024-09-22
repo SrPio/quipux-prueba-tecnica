@@ -1,0 +1,45 @@
+.nav-component {
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 1rem;
+  background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  width: calc(100% - 70px);
+  z-index: 999;
+
+  .logo {
+    height: 50px;
+  }
+}
+
+.container-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+  .icon-user {
+    font-size: 35px;
+  }
+
+  p {
+    margin-bottom: 0;
+    display: none;
+  }
+}
+
+/* Responsive para pantallas más grandes */
+@media (min-width: 768px) {
+  .nav-component {
+    .container-user-info {
+      p {
+        margin-bottom: 0;
+        display: inline-block;
+      }
+    }
+  }
+}

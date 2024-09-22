@@ -1,3 +1,79 @@
-<div class="home--container">
-  <p>home works!</p>
+<app-user-nav></app-user-nav>
+
+<div class="container--home">
+  <div class="row align-items-start">
+    <div class="col-12 col-md-7 home--col--1">
+      <h1>¿Que quieres buscar?</h1>
+      <p>Encuentra la información que desees consultar...</p>
+
+      <div class="search--bar">
+        <div class="input-group mb-3">
+          <button
+            class="btn dropdown-toggle selector"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Todos los servicios
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Que servicio quieres consultar"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-primary" type="button" id="button-addon2">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="options--home">
+        <div class="card--home">
+          <h2>Certificado</h2>
+          <p>Conoce los beneficios que tenemos para ti al registrarte</p>
+          <button class="btn btn-outline-success">+ beneficios</button>
+        </div>
+
+        <div class="card--home">
+          <h2>Crear cuenta</h2>
+          <p>Conoce los beneficios que tenemos para ti al registrarte</p>
+          <button class="btn btn-outline-success">Ver todo</button>
+        </div>
+
+        <div class="card--home">
+          <h2>Top trámites</h2>
+          <p>Conoce los trámites más solicitados.</p>
+          <button class="btn btn-outline-success">Ver todo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md home--col--2">
+      <img
+        src="../../assets/resources/img-hero.png"
+        alt="imagen de chica con el texto Servicios Quipux"
+      />
+      <div class="options--home options--home--v2">
+        <div class="card--home">
+          <h2>Trámites en tu mano</h2>
+          <p>
+            Ahora podrás hacer todos tus trámites desde la comodidad de tu casa,
+            desde cualquier dispositivo computadora, tablet o móvil.
+          </p>
+          <img src="../../assets/resources/home-001.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<router-outlet></router-outlet>
