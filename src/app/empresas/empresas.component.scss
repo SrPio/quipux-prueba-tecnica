@@ -20,7 +20,8 @@ $empresas-bg-color: #f7f9fa;
   margin-left: 70px;
 
   .empresas--container--cards {
-    margin: 0;
+    margin: 0 auto;
+    width: 90%;
 
     .empresas--card {
       padding: 1rem;
@@ -35,10 +36,12 @@ $empresas-bg-color: #f7f9fa;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 730px) {
   .empresas--container {
     .empresas--container--cards {
       margin: 2rem;
+      display: flex;
+      justify-content: space-around;
       .empresas--card {
         padding: 1rem;
         background: #fff;

@@ -18,8 +18,8 @@ $articulos-bg-color: #f7f9fa;
   margin-left: 70px;
 
   .articulos--container--cards {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
 
     .articulos--card {
       padding: 1rem;
@@ -34,7 +34,7 @@ $articulos-bg-color: #f7f9fa;
         justify-content: center;
 
         img {
-          max-width: 400px;
+          max-width: 300px;
           height: auto;
         }
       }
@@ -42,10 +42,13 @@ $articulos-bg-color: #f7f9fa;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 730px) {
   .articulos--container {
     .articulos--container--cards {
       margin: 2rem;
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
       .articulos--card {
         padding: 1rem;
         background: #fff;
