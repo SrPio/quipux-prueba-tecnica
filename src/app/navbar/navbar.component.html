@@ -1,0 +1,75 @@
+<nav [class.open]="menuOpen">
+  <div class="hamburger-container">
+    <button class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a routerLink="/home">
+      <img
+        src="../assets/resources/Logo-blanco.png"
+        alt="logo quipux"
+        class="logo"
+        [class.show-logo]="menuOpen"
+      />
+    </a>
+  </div>
+  <ul>
+    <li
+      [class.show-submenu]="activeMenu === 'empresas'"
+      (click)="toggleSubmenu('empresas')"
+    >
+      <a>
+        <i class="fa-solid fa-suitcase icon"></i>
+        <span class="text">Empresas</span>
+        <i
+          class="fa-solid fa-chevron-right arrow"
+          [class.rotate]="activeMenu === 'empresas'"
+        ></i>
+      </a>
+      <ul>
+        <li>
+          <a routerLink="/empresas" routerLinkActive="active">Empresas</a>
+        </li>
+      </ul>
+    </li>
+    <li
+      [class.show-submenu]="activeMenu === 'colaboradores'"
+      (click)="toggleSubmenu('colaboradores')"
+    >
+      <a>
+        <i class="fas fa-user icon"></i>
+        <span class="text">Colaboradores</span>
+        <i
+          class="fa-solid fa-chevron-right arrow"
+          [class.rotate]="activeMenu === 'colaboradores'"
+        ></i>
+      </a>
+      <ul>
+        <li>
+          <a routerLink="/colaboradores" routerLinkActive="active"
+            >Colaboradores</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li
+      [class.show-submenu]="activeMenu === 'articulos'"
+      (click)="toggleSubmenu('articulos')"
+    >
+      <a>
+        <i class="fas fa-file-invoice icon"></i>
+        <span class="text">Artículos</span>
+        <i
+          class="fa-solid fa-chevron-right arrow"
+          [class.rotate]="activeMenu === 'articulos'"
+        ></i>
+      </a>
+      <ul>
+        <li>
+          <a routerLink="/articulos" routerLinkActive="active">Artículos</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
