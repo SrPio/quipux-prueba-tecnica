@@ -33,6 +33,26 @@
         </li>
       </ul>
     </li>
+
+    <li
+      [class.show-submenu]="activeMenu === 'articulos'"
+      (click)="toggleSubmenu('articulos')"
+    >
+      <a>
+        <i class="fas fa-file-invoice icon"></i>
+        <span class="text">Artículos</span>
+        <i
+          class="fa-solid fa-chevron-right arrow"
+          [class.rotate]="activeMenu === 'articulos'"
+        ></i>
+      </a>
+      <ul>
+        <li>
+          <a routerLink="/articulos" routerLinkActive="active">Artículos</a>
+        </li>
+      </ul>
+    </li>
+
     <li
       [class.show-submenu]="activeMenu === 'colaboradores'"
       (click)="toggleSubmenu('colaboradores')"
@@ -50,24 +70,6 @@
           <a routerLink="/colaboradores" routerLinkActive="active"
             >Colaboradores</a
           >
-        </li>
-      </ul>
-    </li>
-    <li
-      [class.show-submenu]="activeMenu === 'articulos'"
-      (click)="toggleSubmenu('articulos')"
-    >
-      <a>
-        <i class="fas fa-file-invoice icon"></i>
-        <span class="text">Artículos</span>
-        <i
-          class="fa-solid fa-chevron-right arrow"
-          [class.rotate]="activeMenu === 'articulos'"
-        ></i>
-      </a>
-      <ul>
-        <li>
-          <a routerLink="/articulos" routerLinkActive="active">Artículos</a>
         </li>
       </ul>
     </li>

@@ -1,0 +1,49 @@
+$empresas-bg-color: #f7f9fa;
+
+.empresas--container {
+  background: $empresas-bg-color;
+  height: auto;
+  width: 100%;
+
+  padding: 20px 0;
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  margin-top: 80px;
+  margin-left: 70px;
+
+  .empresas--container--cards {
+    margin: 0;
+
+    .empresas--card {
+      padding: 1rem;
+      background: #fff;
+      margin: 25px 0;
+    }
+
+    .card-rigth {
+      border-left: 1px solid #aaaaaa;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .empresas--container {
+    .empresas--container--cards {
+      margin: 2rem;
+      .empresas--card {
+        padding: 1rem;
+        background: #fff;
+        margin: 0 25px;
+      }
+    }
+  }
+}

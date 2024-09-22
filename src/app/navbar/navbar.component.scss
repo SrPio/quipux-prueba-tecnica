@@ -10,7 +10,7 @@ nav {
   flex-direction: column;
   background-color: $nav-bg-color;
   width: 70px;
-  height: 100dvh;
+  height: 150dvh;
   transition: width $nav-transition;
   overflow: hidden;
 
@@ -64,7 +64,7 @@ nav {
           transition: transform $nav-transition;
 
           &.rotate {
-            transform: rotate(90deg); // Flecha rotada cuando está abierto
+            transform: rotate(90deg);
           }
         }
       }
@@ -96,12 +96,12 @@ nav {
       /* Mostrar el submenú al hacer clic */
       &.show-submenu {
         ul {
-          display: block; // Ahora se muestra en el flujo del documento
+          display: block;
         }
 
         a .arrow {
           &.rotate {
-            transform: rotate(90deg); // Flecha rotada cuando está abierto
+            transform: rotate(90deg);
           }
         }
       }

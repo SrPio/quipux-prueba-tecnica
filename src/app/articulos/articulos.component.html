@@ -1,1 +1,65 @@
-<p>articulos works!</p>
+<app-user-nav></app-user-nav>
+
+<div class="text-center articulos--container">
+  <div class="row align-items-start articulos--container--cards">
+    <div class="col-12 col-md-4 articulos--card">
+      <h3 class="text-start">INFORMACIÓN DE LA EMPRESA</h3>
+      <div class="container text-center mt-5">
+        <h4>Nombre</h4>
+        <p>Quipux S.A.S</p>
+      </div>
+      <div class="container text-center mt-1">
+        <h4>Fecha de creación</h4>
+        <p>1995/05/06</p>
+      </div>
+      <div class="container text-center mt-1">
+        <h4>Dirección</h4>
+        <p>
+          Carrera 43A No. 3 Sur-130
+          <br />
+          Ed. Milla de Oro
+          <br />
+          Distrito de negocios Torre 1
+          <br />
+          Piso 12
+        </p>
+        <p class="mt-1">Medellín - Colombia</p>
+      </div>
+
+      <div class="container text-center mt-1">
+        <h4>Número de teléfonos</h4>
+        <p class="mt-1">
+          Fijo
+          <br />
+          +57 (4) 313-70-00
+          <br />
+          Fax
+          <br />
+          +57 (4) 313-44-77
+        </p>
+      </div>
+      <div class="container text-center mt-1">
+        <h4>Sitio Web</h4>
+        <a href="http://www.quipux.com/site">http://www.quipux.com/site</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 articulos--card no-bg">
+      <div class="col-12 articulos--card">
+        <div class="container--img">
+          <img src="../../assets/resources/articulos--carrusel.png" alt="" />
+        </div>
+      </div>
+
+      <div class="col-12 articulos--card articulos--card--list">
+        <section class="articles--lists--items">
+          <article class="article--item" *ngFor="let articulo of articulos">
+            <img [src]="articulo.imagen" alt="Imagen del artículo" />
+            <h4 class="article--name">{{ articulo.titulo }}</h4>
+            <p class="article--description">{{ articulo.descripcion }}</p>
+          </article>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
