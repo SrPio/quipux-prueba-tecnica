@@ -90,6 +90,15 @@ nav {
             width: 100%;
             text-align: left;
           }
+
+          a {
+            &::before {
+              font-family: "Font Awesome 6 Free"; // Asegúrate de tener Font Awesome 6
+              content: "\f068"; // Código Unicode para fa-minus (guion corto)
+              font-weight: 900; // Estilo sólido para Font Awesome
+              margin-right: 8px; // Espacio entre el icono y el texto
+            }
+          }
         }
       }
 

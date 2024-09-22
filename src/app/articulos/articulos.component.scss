@@ -39,6 +39,35 @@ $articulos-bg-color: #f7f9fa;
         }
       }
     }
+
+    .no-bg {
+      background-color: $articulos-bg-color !important;
+    }
+
+    .articulos--card--list {
+      .articles--lists--items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        max-width: 800px;
+
+        .article--item {
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -53,10 +82,6 @@ $articulos-bg-color: #f7f9fa;
         padding: 1rem;
         background: #fff;
         margin: 0 25px;
-      }
-
-      .no-bg {
-        background-color: $articulos-bg-color !important;
       }
 
       .articulos--card--list {
